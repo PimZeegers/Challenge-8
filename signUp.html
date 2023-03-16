@@ -7,14 +7,27 @@
     <title>SignUp</title>
 
     <link rel="stylesheet" href="signUp.css" />
+
+    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
+
 </head>
 <body>
+
+  <fieldset>
+  
+    <form name="Front Page" method="post" action="index.php">
+   
+    
+    
+    </form>
+    </fieldset>
+    
     <div class="wrapper">
         <header>SignUp </header>
-        <form action="#">
+        <form method="post" action="index.php">
           <div class="field email">
             <div class="input-area">
-              <input type="text" placeholder="Username">
+              <input placeholder="username" name="username" id="username"> <!--Input for the username-->
               <i class="icon fas fa-envelope"></i>
               <i class="error error-icon fas fa-exclamation-circle"></i>
             </div>
@@ -22,13 +35,13 @@
           </div>
           <div class="field password">
             <div class="input-area">
-              <input type="password" placeholder="Password">
+              <input type="password" placeholder="Password" name="password" id="password"> <!--Input for the password-->
               <i class="icon fas fa-lock"></i>
               <i class="error error-icon fas fa-exclamation-circle"></i>
             </div>
-            <div class="error error-txt">Password can't be blank</div>
+            <div class="error error-txt">Password can't be blank</div> 
           </div>
-         <input type="submit" value="Sign Up">
+         <input type="submit" value="Sign Up" name="submit" id="submit"> <!--Button to submit ( upload to database via index.php file )-->
         </form>
         <div class="sign-txt">Got an account ?<a href="./index.html">  Login now</a></div>
       </div>
