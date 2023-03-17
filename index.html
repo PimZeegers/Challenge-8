@@ -13,25 +13,18 @@
 </head>
 <body>
 <fieldset>
-<legend>Front Page</legend>
-<form name="Front Page" method="post" action="index.php">
-<p>
-<label for="username">Username</label>
-<input type="text" name="username" id="username">
-</p>
-<p>
-<input type="submit" name="submit" id="submit" value="submit">
-</p> 
+
+<form name="Front Page" method="post" action="login.php">
 
 
 </form>
 </fieldset>
     <div class="wrapper">
         <header>Login StreetSnap</header>
-        <form action="#">
+        <form method="post" action="login.php">
           <div class="field email">
             <div class="input-area">
-              <input type="text" placeholder="Username">
+              <input placeholder="username" type="text" name="username" id="username"> <!--Input for the username-->
               <i class="icon fas fa-envelope"></i>
               <i class="error error-icon fas fa-exclamation-circle"></i>
             </div>
@@ -39,14 +32,14 @@
           </div>
           <div class="field password">
             <div class="input-area">
-              <input type="password" placeholder="Password">
+              <input type="password" placeholder="Password" name="password" id="password"> <!--Input for the password-->
               <i class="icon fas fa-lock"></i>
               <i class="error error-icon fas fa-exclamation-circle"></i>
             </div>
             <div class="error error-txt">Password can't be blank</div>
           </div>
           <div class="pass-txt"><a href="#">Forgot password?</a></div>
-          <input type="submit" value="Login">
+          <input type="submit" value="Login" name="submit" id="submit">
         </form>
         <div class="sign-txt">Not yet member? <a href="./signUp.html">Signup now</a></div>
       </div>

@@ -7,18 +7,25 @@ $password = $_POST['password'];
 $username = $_POST['username'];
 
 // database insert SQL code
-$sql = "INSERT INTO `customer` (`id`, `password`, `username`) VALUES ('0', '$password', '$username')";
+$sql = "SELECT
+    password,
+    username
+FROM
+    customer
+WHERE
+    password = '$password' AND username = '$username'";	// EXPERIMENTEEL, werkt nog niet!
 
 // insert in the database 
 $rs = mysqli_query($con, $sql);
-
-if($rs)
+if ($rs = true); // EXPERIMENTEEL, werkt nog niet!
 {
-	
-	echo "Uw account is aangemaakt!";
-	sleep(2);
-	header("Location:index.html");
-	exit();
+
+    sleep(2);
+    header("Location:profile.html");
+    exit();
+
+    
 }
+
 
 ?>
