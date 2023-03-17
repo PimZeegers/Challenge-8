@@ -1,0 +1,157 @@
+/* Algemene opmaak */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	background-color: #fafafa;
+  }
+  
+  a {
+	color: #0095f6;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	text-decoration: underline;
+  }
+  
+  header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 24px;
+	background-color: #fff;
+	border-bottom: 1px solid #dbdbdb;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+  }
+  
+  nav ul {
+	display: flex;
+  }
+  
+  nav li:not(:last-child) {
+	margin-right: 16px;
+  }
+  
+  nav a {
+	font-weight: bold;
+  }
+  
+  main {
+	max-width: 768px;
+	margin: 100px auto 0;
+	padding: 0 24px;
+  }
+  
+  .post {
+	margin-bottom: 60px;
+  }
+  
+  .post img {
+	width: 100%;
+  }
+  
+  .post-info {
+	margin-top: 12px;
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .post-info h2 {
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 4px;
+  }
+  
+  .post-info p {
+	font-size: 14px;
+	color: #8e8e8e;
+	margin-bottom: 8px;
+  }
+  
+  footer {
+	text-align: center;
+	font-size: 14px;
+	color: #8e8e8e;
+	margin-top: 60px;
+  }
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+	header {
+	  padding: 16px;
+	}
+  
+	main {
+	  margin-top: 80px;
+	}
+  
+	.post-info {
+	  margin-top: 8px;
+	}
+  }
+  
+  .post {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+  }
+  
+  .post img {
+	width: 100%;
+  }
+  
+  .post-info {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+  }
+  
+  .post-info h2 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+  }
+  
+  .post-info p {
+	font-size: 14px;
+	margin-bottom: 10px;
+  }
+  
+  .post-info a {
+	color: #385185;
+	font-size: 14px;
+  }
+  
+  .post-interaction {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+  }
+  
+  .post-interaction button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #385185;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+  }
+  
+  .post-interaction button span {
+	margin-left: 5px;
+  }
+  
+  .post-interaction button:hover {
+	text-decoration: underline;
+  }
+  
